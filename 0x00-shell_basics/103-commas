@@ -1,2 +1,2 @@
 #!/bin/bash
-./ls -alp --format=comma
+./ls -alkp --format=comma
