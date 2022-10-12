@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{arr[$1]++} END {for (i in arr) {if (arr[i]==1) {print i} }}' | sort
+awk '{arr[$1]++} END {for (i in arr) {if (arr[i]==1) {print i} }}' | sort -nr
