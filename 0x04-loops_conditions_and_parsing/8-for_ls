@@ -4,5 +4,6 @@
 LIST=$(ls)
 for i in $LIST
 do
-echo $i
+split=$(cut -c 3- $i)
+echo $split
 done
