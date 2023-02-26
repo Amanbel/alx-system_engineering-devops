@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #displays the files in the current directory
 
-LIST=$(ls | cut -d - -f2)
+LIST=$(find . | cut -d - -f2)
 
 for i in $LIST
 do
-echo $i
+echo "$i"
 done
