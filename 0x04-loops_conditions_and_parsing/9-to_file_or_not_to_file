@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#checks the status of the file named school
 
 device="./school"
 
