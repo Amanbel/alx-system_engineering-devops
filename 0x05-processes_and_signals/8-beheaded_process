@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #kills the process to infinity and beyond
 
-PROC=$(pgrep -f 4-to_infinity_and_beyond)
+PROC=$(pgrep -f 7-highlander)
 
 kill -9 $PROC
