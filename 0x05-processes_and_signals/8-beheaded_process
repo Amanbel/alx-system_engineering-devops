@@ -3,4 +3,4 @@
 
 PROC=$(pgrep -f 7-highlander)
 
-kill -9 $PROC
+kill -9 "$PROC"
