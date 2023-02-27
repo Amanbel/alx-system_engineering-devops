@@ -2,4 +2,5 @@
 #displays info about the currently running processes
 
 PROC=$(ps -u | sort)
+
 echo "$PROC"
