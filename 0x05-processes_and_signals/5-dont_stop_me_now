@@ -5,5 +5,5 @@ LIST=$(pgrep -f 4-to_infinity_and_beyond)
 
 for i in $LIST
 do
-	kill $i
+	kill "$i"
 done
