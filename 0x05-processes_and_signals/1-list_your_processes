@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #displays info about the currently running processes
 
-PROC=$(ps -aux)
+PROC=$(ps -auxe)
 
 echo "$PROC"
