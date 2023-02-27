@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#displays all the bash process running currently
+
+ps -aux | egrep -i 'bash'
