@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-^C pgrep -f 4-to_infinity_and_beyond
+FILE=./myscript.pid
+
+echo $$ > $FILE

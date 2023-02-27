@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#creates a file and prints to infinity and beyond unit its killed
+
+FILE=/var/run/myscript.pid
+trap 'rm -f $FILE; echo "I hate the kill command"; exit' SIGTERM SIGQUIT
+trap 'echo "Y U no love me?!"' SIGINT
+echo $$ > $FILE
+
+while [ 1 -eq 1 ]
+do
+echo "To infinity and beyond"
+sleep 2
+done
