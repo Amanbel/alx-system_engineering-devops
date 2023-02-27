@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#kills the infinity and beyond program
+
+LIST=$(pgrep -f 4-to_infinity_and_beyond)
+
+for i in $LIST
+do
+	kill $i
+done
