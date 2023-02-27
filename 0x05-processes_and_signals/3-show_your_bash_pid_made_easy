@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #displays the PID and name of the process
 
-LIST=$(pgrep -u $USER bash)
+LIST=$(pgrep bash)
 
 for i in $LIST
 do
