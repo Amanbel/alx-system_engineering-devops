@@ -1,2 +1,2 @@
 #!/bin/env ruby
-puts /School/.match(ARGV[0])
+puts ARGV[0].match(/School/)
