@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 
-puts ARGV[0].match(/h{1,2}n/)
+puts ARGV[0].match(/hb{0,1}tn/)
