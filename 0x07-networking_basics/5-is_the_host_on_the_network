@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#checks the ping of the host network
 
 if [ $# -ne 0 ]
 then
