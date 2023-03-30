@@ -1,0 +1,26 @@
+web infrastructure digram link: https://photos.app.goo.gl/v2ZEzEw5eGro6Kk76
+Answer:
+1, Firewalls: firewall helps the server to keep out malicious activity and attackers out of its network by managing the data that comes in from the outside network
+   SSL certificate(HTTPS): using a HTTPS protocole enables the safe transfer of packets from and to the server by encrypting the data that comes in and out of the server
+   Monitoring services: The monitoring services enable us to look after the servers by observing the stats of the software and hardware of the server.
+
+2, firewalls are used to block and monitor any data that comes in to the network or device and guard from any malicious activity
+
+3, HTTPS enable us to send sensitive data to the server by encrypting it so no one except the server can access it
+
+4, monitoring is used to observe and monitor the server for unhealthy activity so that it could be delt with effectively
+
+5, monitoring tool works by tracking the servers activity by the log files it produces automatically, the log files provide information about issues, user activity and security events.
+
+6, monitor standardized operating system KPIs(key performance indicators) and use appropriote thresholds
+   monitor operating system availability with pings
+   monitor the availability of a server specific function
+   monitor event logs on windows and syslogs on linux/unix and network devices
+   monitor server specific known problems
+
+issues of infrastructure
+1, when encrypted requests pass from the load balancer to the servers they become unencrypted thus exposing the applications to a Man in the middle attack (MITM)
+
+2, if the primary database fails and the website or server needs to write data the replica server can not handle that function, thus the website will be unable to store data
+
+3, security maybe an issue because all the components exist in the same server, if the web server gets comprimised and the connection between the web server and the other components isnt secure enough then the web server has comprimised the application and database server along with it
