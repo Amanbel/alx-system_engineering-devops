@@ -1,0 +1,19 @@
+web infrastructure diagram link: https://photos.app.goo.gl/hmcVs8XCusXQTFYJ6
+Answers:
+1, server is a piece of hardware or software that provides services for clients, such as sharing data or resources between clients
+2, Domain name is used to map a link (word) to its respective IP address
+3, NS (name server) Record
+4, web servers are used to provide static web pages upon request by a client
+5, application servers are used to handle the business logic of the web site, they enable a server to generate a dynamic response to a client request.
+6, databases are used to organize and store data for the use of application servers or any other software
+7, HTTP protocols and IP addresses
+
+issues of this web infrastructure
+1, SPOF
+	the infrastruture is composed of a single server thus if the server is down it makes the website unreachable
+	and the infrastructure doesn't have any load balancer so if multiple users wanted to access the website foobar.com the server will be unable to provide for every client.
+2, Downtime when maintenance needed
+	the infrastructure depicted has only one server operational thus making code updates and maintenace an issue,
+	if servers dont have an extra duplicat when updating or fixing the issues of the server, the server might not be functional most of the time in turn decreasing availability and increasing downtime
+3 cannot scale if too much incoming traffic
+	lack of a load balancer and an extra server make it so that the website cannot be scalable if more users are accessing it
