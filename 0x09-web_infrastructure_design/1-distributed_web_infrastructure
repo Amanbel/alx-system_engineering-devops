@@ -1,0 +1,24 @@
+web infrastructure diagram link: https://photos.app.goo.gl/hgG7a6yq3NYH6MUx7
+Answers:
+1, the additional elements help in high availability and decrease downtime, they also handle more incoming traffic. the additional elements enables the server to have redundant components meaning the if one has an issue then the other server can be used in the mean time while the first one is being fixed.
+
+2, the load balancer uses weighted scheduling algorithm so that it can assign the respactive loads to each server depending on there hardware capabilities, weighted scheduling algorithm works by assigning each server the load per its weight enabling the server to handle data which is compatible with its hardware capabilities.
+
+3, my load balancer is using Active-Active setup so that it can be easily scalable and improve high availablity and there is no monitoring software to implement Active-Passive solution. 
+	Active-Active setup: its the deployment of to or more active instances of a node, this nodes handle traffic concurrently.
+	Active-Passive setup: deploys an active instance to handle requests and another passive instance on standby if any thing happens to the first instance, usually implemented to handle natural disasters.
+
+4, master-slave databases work by copying the data inside the primary database(Master) into the replica(slave) database, which enables the primary data to be backed up to another database incase of an emergancy, the master database can handle read and write operations but the slave database can only handle read operations, any update to the master server goes out to all the subnodes(slaves).
+
+5, the primary node is where the main requests are routed to and runs primary components of distributed applications the secondary node is where the copies of that requsests reside and they only serve as read only replicas.
+
+issues of the infrastructure
+1, SPOF
+	the SPOF of this infrastructure is the software component which is the monitoring services, with out the monitoring service its difficult to know the states of each server
+
+2, No security(no firewalls, no HTTPS)
+	firewall: having no firewall can leave the server and client to various attacks, enabling hackers to easily infiltrate the network.
+	HTTPS: requsting or responding with none secure HTTP protocols allows attackers to intercept data going in and out of a network allowing them to have access to various private data for example payment info
+
+3, No monitoring
+	the lack of a monitoring service hinders the ability of the servers to have each others back, and not being able to monitor the data of the servers leads to loss of critical information that could have had an impact in the improvmen	t of the availability of the web site.
