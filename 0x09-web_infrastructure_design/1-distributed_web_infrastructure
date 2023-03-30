@@ -1,6 +1,6 @@
 web infrastructure diagram link: https://photos.app.goo.gl/hgG7a6yq3NYH6MUx7
 Answers:
-1, the additional elements help in high availability and decrease downtime, they also handle more incoming traffic. the additional elements enables the server to have redundant components meaning the if one has an issue then the other server can be used in the mean time while the first one is being fixed.
+1, the additional elements help in high availability and decrease downtime, they also handle more incoming traffic. the additional elements enables the server to have redundant components meaning that if one has an issue then the other server can be used in the mean time while the first one is being fixed.
 
 2, the load balancer uses weighted scheduling algorithm so that it can assign the respactive loads to each server depending on there hardware capabilities, weighted scheduling algorithm works by assigning each server the load per its weight enabling the server to handle data which is compatible with its hardware capabilities.
 
