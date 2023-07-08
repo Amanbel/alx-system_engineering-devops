@@ -1,8 +1,8 @@
 # setup your ssh config file with puppet
-file_line { 'Turn off password auth':
+file_line { 'Turn off passwd auth':
   ensure => 'present',
   path => '/etc/ssh/ssh_config',
-  line => '    passwordAuthentication no',
+  line => '    PasswordAuthentication no',
   }
 file_line { 'Declare identity file':
   ensure => 'present',
