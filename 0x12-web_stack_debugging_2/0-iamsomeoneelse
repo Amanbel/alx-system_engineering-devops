@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# execute commands as another user
+su $1 -c 'whoami'
