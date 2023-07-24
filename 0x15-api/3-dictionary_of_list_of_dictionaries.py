@@ -17,10 +17,11 @@ typicode.com/todos")
         userId = user["id"]
         value = []
         for obj in todoRes.json():
-            task = obj["title"]
-            status = obj["completed"]
-            jsObj = {"username": name, "task": task, "completed": status}
-            value.append(jsObj)
+            if userId == obj["userId"]:
+                task = obj["title"]
+                status = obj["completed"]
+                jsObj = {"username": name, "task": task, "completed": status}
+                value.append(jsObj)
         dicts[userId] = value
     with open("todo_all_employees.json", 'w') as f:
         json.dump(dicts, f)
