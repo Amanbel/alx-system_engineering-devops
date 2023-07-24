@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# python script to fetch data from api
 if __name__ == "__main__":
     import requests
     from sys import argv
