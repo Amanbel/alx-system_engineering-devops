@@ -2,13 +2,13 @@
 """ python script to fetch data from api """
 
 if __name__ == "__main__":
+
     import requests
     from sys import argv
     if len(argv) < 2:
         exit()
 
     i = 0
-
     res = requests.get("https://jsonplaceholder.\
 typicode.com/todos?userId={}".format(argv[1]))
     userRes = requests.get("https://jsonplaceholder.\
