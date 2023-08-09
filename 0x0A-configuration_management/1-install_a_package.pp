@@ -1,6 +1,5 @@
 # installing a package with puppet
 
-package { 'flask':
-  ensure   => '2.1.0',
-  provider => 'apt',
+exec { 'flask':
+  command  => '/usr/bin/apt-get install flask -v 2.1.0',
 }
